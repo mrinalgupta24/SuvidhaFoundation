@@ -1,0 +1,72 @@
+
+  /* -------------------------------- #VARIABLE ------------------------------- */
+
+:root {
+
+  
+   /* --------------------------------- colors --------------------------------- */
+   
+
+  --mustard: rgb(249, 173, 0);
+  --blue: rgb(42, 120, 203);
+  --lavender-blue: rgb(210, 218, 254);
+  --oxford-blue: rgb(30, 36, 54);
+  --light-gray: rgb(204, 204, 204);
+  --sonic-silver: rgb(120, 120, 120);
+  --blue-crayola: rgb(13, 109, 253);
+  --cultured: rgb(242, 243, 247);
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+  --purple: rgb(149, 11, 184);
+  --green: rgb(72, 137, 11);
+  --shade-black: rgb(16, 16, 16);
+
+  
+   /* ------------------------------- typography ------------------------------- */
+
+
+  --fs-1: 38px;
+  --fs-2: 35px;
+  --fs-3: 30px;
+  --fs-4: 22px;
+  --fs-5: 20px;
+  --fs-6: 15px;
+  --fs-7: 25px;
+  --fs-8: 70px;
+  --fs-9: 45px;
+
+  --fw-5: 500;
+  --fw-6: 600;
+  --fw-7: 700;
+  --fw-8: 800;
+  --fw-9: 900;
+  --fw-10: 650;
+
+   /* --------------------------------- spacing -------------------------------- */
+   
+
+  --px: 15px;
+  --py: 80px;
+
+  --mx: 12px --my:70px
+    
+    /* --------------------------------- others --------------------------------- */
+   
+
+    --default-transition: 0.25s ease;
+
+}
+.slide-left{
+  animation: slideleft 1s linear forwards;
+  animation-delay: 4s;
+}
+@keyframes slideleft{
+   0%{
+    transform: translateX(100px);
+    opacity: 0;
+   }
+   100%{
+    transform: translateX(0px);
+    opacity: 1;
+   }
+}

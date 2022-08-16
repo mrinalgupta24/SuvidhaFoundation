@@ -1,0 +1,296 @@
+/* ===== Google Font Import ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ------------------------------- #EVENT TOP ------------------------------- */
+.container {
+  background: var(--cultured);
+  /* max-width: 1440px; */
+  margin: auto;
+  overflow: hidden;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.eventstop {
+  position: relative;
+  margin-top: 70px;
+  padding: var(--py) var(--px) 0;
+  background: var(--cultured);
+  overflow: hidden;
+  margin-bottom: -50px;
+}
+
+.eventstop::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  left: -400px;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, hsla(125, 100%, 55%, 0.3), transparent 70%);
+}
+
+.eventstop::after {
+  content: '';
+  position: absolute;
+  top: 100px;
+  right: -400px;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, hsla(280, 100%, 55%, 0.587), transparent 70%);
+}
+
+.eventstop-left {
+  margin-bottom: 60px;
+}
+
+.eventstop-left,
+.eventstop-right {
+  position: relative;
+  z-index: 10;
+}
+
+.eventstop .section-subtitle {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: var(--fs-3);
+}
+
+h1 {
+  color: var(--oxford-blue);
+  font-size: var(--fs-1);
+  font-weight: var(--fw-9);
+  line-height: 1.2;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: var(--fs-8);
+}
+
+.eventstop .section-text {
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+  font-size: var(--fs-7);
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.eventstop .section-texthome {
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+  font-size: var(--fs-7);
+  text-decoration: none;
+  color: var(--mustard);
+}
+
+/* ------------------------------ EVENT SECTION ----------------------------- */
+
+.event-page {
+  font-family: "Poppins", sans-serif;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 15%;
+}
+
+.event-page h3.year {
+  font-size: 50px;
+  text-align: center;
+  border-bottom: 4px solid black;
+}
+
+.event-page .eventbox {
+  box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  border-radius: 8px;
+  margin: 32px 0;
+  background: var(--cultured);
+}
+
+.eventbox .eventbox-left {
+  background: var(--mustard);
+  min-width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+  padding: 8px 30px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px 0 0 8px;
+}
+
+.eventbox .eventbox-date img {
+  display: flex;
+  border-radius: 8px;
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.eventbox .eventbox-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 24px;
+}
+
+.eventbox .eventbox-right h3.eventbox-title {
+  font-size: 24px;
+  margin: 24px 0 10px 0;
+  color: #218bbb;
+  text-transform: uppercase;
+}
+
+.eventbox .eventbox-right .eventbox-timing {
+  background: #fff8ba;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  padding: 8px;
+  border-radius: 16px;
+  margin: 24px 0;
+  font-size: 14px;
+}
+
+.eventbox .event-right .event-timing img {
+  height: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 550px) {
+  .EVENT {
+    flex-direction: column;
+  }
+
+  .EVENT .EVENT-left {
+    padding: 0;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .EVENT .EVENT-left .EVENT-date .date,
+  .EVENT .EVENT-left .EVENT-date .month {
+    display: inline-block;
+    font-size: 24px;
+  }
+
+  .EVENT .EVENT-left .EVENT-date {
+    padding: 10px 0;
+  }
+}
+
+/* ---------------------------- GO TO TOP BUTTON ---------------------------- */
+
+body {
+  min-height: 500vh;
+  background-color: #fff;
+}
+
+.scroll-btn {
+  font-size: 3rem;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+.scroll-btn:hover {
+  color: rgb(42, 120, 203);
+}
+
+@media screen and (max-width:280px) {
+  .eventstop .section-subtitle {
+    font-size: var(--fs-4);
+  }
+
+  h1 {
+    font-size: var(--fs-3);
+  }
+
+  .eventstop .section-text {
+    font-size: var(--fs-4);
+  }
+
+  .event-page h3.year {
+    font-size: var(--fs-2);
+  }
+
+  .event-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .eventbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .eventbox .eventbox-right {
+    align-items: center;
+  }
+
+  .eventbox .eventbox-right .eventbox-description {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:280px) and (max-width:992px) {
+  .eventstop .section-subtitle {
+    font-size: var(--fs-3);
+  }
+
+  .event-page h3.year {
+    font-size: var(--fs-2);
+  }
+
+  h1 {
+    font-size: var(--fs-4);
+  }
+
+  .eventstop .section-text {
+    font-size: var(--fs-7);
+  }
+
+  .event-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .eventbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .eventbox .eventbox-right {
+    align-items: center;
+  }
+
+  .eventbox .eventbox-right .eventbox-description {
+    text-align: center;
+  }
+}

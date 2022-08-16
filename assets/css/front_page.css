@@ -1,0 +1,65 @@
+@import url(./variable.css);
+
+.header-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.1rem 9%;
+    background: var(--mustard);
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-1 .share {
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.header-1 .call {
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.header-1 {
+    border-bottom: .1rem solid rgba(255, 255, 255, .2);
+}
+
+.header-1 span {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1rem;
+
+}
+
+.header-1 a {
+    padding: 0 .7rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.header-1 a:hover {
+    color: var(--blue);
+}
+
+@media screen and (max-width:600px) {
+    .header-1 {
+        padding: 0.2rem 7%;
+    }
+
+    .header-1 span {
+        font-weight: 600;
+        color: #fff;
+        font-size: 0.6rem;
+    }
+
+    .header-1 a {
+        padding: 0 .4rem;
+        color: #fff;
+        font-size: 0.6rem;
+    }
+}
